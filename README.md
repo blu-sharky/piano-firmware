@@ -1,34 +1,16 @@
 # piano-firmware
 
-Device firmware for running mainline Linux on the Xiaomi Pad 8 Pro
-(codename *piano*, Qualcomm SM8750). The `firmware/` tree installs as
-`/usr/lib/firmware/` and is consumed by the
-[debian-piano](https://github.com/bluseliu50/debian-piano) image builder.
-`firmware/SHA256SUMS` covers every file.
+Device firmware for running mainline Linux on the Xiaomi Pad 8 Pro (codename *piano*, Qualcomm SM8750). The `firmware/` tree installs as `/usr/lib/firmware/` and is consumed by the [debian-piano](https://github.com/bluseliu50/debian-piano) image builder. `firmware/SHA256SUMS` covers every file.
 
 ## Compliance statement
 
-**This repository is not covered by the licences of the piano Linux
-projects.** Nothing here is open source. Each file keeps its original
-owner's copyright and terms:
+**This repository is not covered by the licences of the piano Linux projects.** Nothing here is open source. Each file keeps its original owner's copyright and terms:
 
-- Files marked *redistributable* are byte-identical copies from the
-  upstream [linux-firmware](https://gitlab.com/kernel-firmware/linux-firmware)
-  repository and are redistributed under the licences shipped in
-  `LICENSES/`, which you must keep with any copy.
-- All other files are proprietary firmware of Qualcomm Technologies, Inc.,
-  Xiaomi and Novatek (touch controller), extracted **unmodified** from the
-  publicly distributed stock Xiaomi fastboot ROM
-  `piano_images_OS3.0.308.0.WPYCNXM_16.0` (partitions NON-HLOS, BTFM, odm).
-  Only the file names were adapted to what the Linux drivers request.
-  **No redistribution licence has been granted for these files.** They are
-  provided solely so that owners of this device can operate its own
-  hardware (WLAN, Bluetooth, touchscreen) under Linux, with no warranty and
-  no claim of ownership, and must not be used for any other purpose.
+- Files marked *redistributable* are byte-identical copies from the upstream [linux-firmware](https://gitlab.com/kernel-firmware/linux-firmware) repository and are redistributed under the licences shipped in `LICENSES/`, which you must keep with any copy.
+- All other files are proprietary firmware of Qualcomm Technologies, Inc., Xiaomi and Novatek (touch controller), extracted **unmodified** from the publicly distributed stock Xiaomi fastboot ROM `piano_images_OS3.0.308.0.WPYCNXM_16.0` (partitions NON-HLOS, BTFM, odm). Only the file names were adapted to what the Linux drivers request. **No redistribution licence has been granted for these files.** They are provided solely so that owners of this device can operate its own hardware (WLAN, Bluetooth, touchscreen) under Linux, with no warranty and no claim of ownership, and must not be used for any other purpose.
 - No keys, signing material, bootloader-chain or user data are included.
 
-If you are a rights holder and object to the distribution of any file,
-please open an issue in this repository; the file will be removed promptly.
+If you are a rights holder and object to the distribution of any file, please open an issue in this repository; the file will be removed promptly.
 
 ## Provenance
 
