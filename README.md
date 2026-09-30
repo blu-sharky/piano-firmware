@@ -7,7 +7,7 @@ Device firmware for running mainline Linux on the Xiaomi Pad 8 Pro (codename *pi
 **This repository is not covered by the licences of the piano Linux projects.** Nothing here is open source. Each file keeps its original owner's copyright and terms:
 
 - Files marked *redistributable* are byte-identical copies from the upstream [linux-firmware](https://gitlab.com/kernel-firmware/linux-firmware) repository and are redistributed under the licences shipped in `LICENSES/`, which you must keep with any copy.
-- All other files are proprietary firmware of Qualcomm Technologies, Inc., Xiaomi and Novatek (touch controller), extracted **unmodified** from the publicly distributed stock Xiaomi fastboot ROM `piano_images_OS3.0.308.0.WPYCNXM_16.0` (partitions NON-HLOS, BTFM, odm). Only the file names were adapted to what the Linux drivers request. **No redistribution licence has been granted for these files.** They are provided solely so that owners of this device can operate its own hardware (WLAN, Bluetooth, touchscreen, GPU) under Linux, with no warranty and no claim of ownership, and must not be used for any other purpose.
+- All other files are proprietary firmware of Qualcomm Technologies, Inc., Xiaomi, Novatek (touch controller) and FourSemi (speaker amplifiers), extracted **unmodified** from the publicly distributed stock Xiaomi fastboot ROM `piano_images_OS3.0.308.0.WPYCNXM_16.0` (partitions NON-HLOS, BTFM, odm). Only the file names were adapted to what the Linux drivers request. **No redistribution licence has been granted for these files.** They are provided solely so that owners of this device can operate its own hardware (WLAN, Bluetooth, touchscreen, GPU, and through the audio DSP the sensors, battery telemetry and sound) under Linux, with no warranty and no claim of ownership, and must not be used for any other purpose.
 - No keys, signing material, bootloader-chain or user data are included.
 
 If you are a rights holder and object to the distribution of any file, please open an issue in this repository; the file will be removed promptly.
@@ -16,6 +16,8 @@ If you are a rights holder and object to the distribution of any file, please op
 
 | File | Origin | Licence |
 |---|---|---|
+| `adsp.mdt`, `adsp.b00`–`adsp.b56` (no `b27`, `b55`) | stock NON-HLOS `/image/adsp.mdt`, `/image/adsp.bNN` (audio DSP: sensors hub, battery transport, audio; stock names, as the device tree requests them) | **No redistribution licence** (see statement) |
+| `adsp_dtb.mdt`, `adsp_dtb.b00`–`adsp_dtb.b02` | stock NON-HLOS `/image/adsp_dtb.mdt`, `/image/adsp_dtb.bNN` (audio DSP device tree) | **No redistribution licence** (see statement) |
 | `ath12k/PEACH/hw2.0/amss.bin` | stock NON-HLOS `/image/peach/amss20.bin` | **No redistribution licence** (see statement) |
 | `ath12k/PEACH/hw2.0/aux_ucode.bin` | stock NON-HLOS `/image/peach/aux_ucode20.elf` | **No redistribution licence** (see statement) |
 | `ath12k/PEACH/hw2.0/board.bin` | stock NON-HLOS `/image/peach/bd_p81.elf` | **No redistribution licence** (see statement) |
@@ -51,4 +53,5 @@ If you are a rights holder and object to the distribution of any file, please op
 | `qcom/gen80000_aqe.fw` | linux-firmware 9b858e5b (v0.14) | Redistributable, `LICENSES/LICENSE.qcom` + `LICENSES/NOTICE.qcom` |
 | `qcom/gen80000_gmu.bin` | linux-firmware 9b858e5b (v5.01.19; identical to stock vendor `/firmware/gen80000_gmu.bin`) | Redistributable, `LICENSES/LICENSE.qcom` + `LICENSES/NOTICE.qcom` |
 | `qcom/gen80000_sqe.fw` | linux-firmware 9b858e5b (v0.77) | Redistributable, `LICENSES/LICENSE.qcom` + `LICENSES/NOTICE.qcom` |
+| `qcom/sm8750/xiaomi/piano/fs19xx.fsm` | stock odm `/firmware/fs19xx.fsm` (FS19xx speaker amplifier presets, one block per amplifier) | **No redistribution licence** (see statement) |
 | `qcom/sm8750/xiaomi/piano/gen80000_zap.mbn` | stock odm `/firmware/gen80000_zap.mbn` (signed for this device; the linux-firmware copy is signed for Qualcomm reference boards) | **No redistribution licence** (see statement) |
