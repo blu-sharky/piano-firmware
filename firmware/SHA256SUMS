@@ -69,6 +69,7 @@ a175c8d9d0e6b38b5ae23ff0175da795b14b8268919463d2b6e1cb2bfeebc9f8  ./ath12k/PEACH
 00e7770b9ba418709f92283bb73dd7967f44421c63ffb32d8774b60ce249d268  ./ath12k/WCN7850/hw2.0/bdwlan.bin
 1abee7132dbccb523cca44a8de4e8968aa7bf5a5fcc032c338f687f94ea5bf4e  ./ath12k/WCN7850/hw2.0/board-2.bin
 0e72f44df7defc269fe92dcea25d4d409046c04b77d41c510c52879b3dfc1055  ./ath12k/WCN7850/hw2.0/m3.bin
+c03d6b650cb85a983359c6686d831875df10ee1206fd31afc1403baefeb7e407  ./nanosic/MCU_Upgrade.bin
 b7999389d49decb14019e24ce68c6fbb0a388e26391b9b0ab913e285c5e44c6b  ./novatek/novatek_nt36532_piano_fw_boe.bin
 14b30bb7799d273f6c5d967376694c2cbd3056f3939135ceda70ebec64abfa7a  ./novatek/novatek_nt36532_piano_fw_csot.bin
 b9bdec8cda062a57c91f86c37615bb7f3c8f16a1efc82d75698714eed1dd3463  ./qca/brhbtfw20.tlv
